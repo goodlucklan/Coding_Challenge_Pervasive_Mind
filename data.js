@@ -7,7 +7,7 @@ const InputList = [{ first: 1, second: 5 }, { first: 2, second: 10 }, { first: 1
 exports.Database = async (req, res) => {
     try {
         var element = []
-        for (let index = 0; index <= 4096; index++) {
+        for (let index = 0; index < 4096; index++) {
             element.push(index);
         }
         await industrialProtocol(InputList);
